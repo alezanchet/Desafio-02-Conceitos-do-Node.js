@@ -23,7 +23,7 @@ function validateRepositoryId(request, response,next){
 app.use('/projects/:id', validateRepositoryId)
 
 app.get("/repositories", (request, response) => {
-  // TODO
+  return response.json(repositories)
 });
 
 app.post("/repositories", (request, response) => {
